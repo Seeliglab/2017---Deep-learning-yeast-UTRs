@@ -6,6 +6,16 @@ We hope that by including some of the code in our analysis it will help others r
 To get going, just put the Data and Jupyter_notebooks folders into the same folder. If you start with Notebook_1 everything should just work (including the creation of subsequent folders/subfolders). If you'd like to just go through a specific notebook without running the others, let me know and I can provide the required files (bgroves "at" uw "dot" edu, or benjaminbgroves "at" gmail "dot" com).
 
 
+If you want to use the exact model that we trained using the ~500,000 random 5' UTR sequences, the .hdf5 and .json files in the /Results/Random_UTR_CNN.Hyperparam.Opt/ folder will get you there.
+
+e.g.
+```Python
+path_to_model_params_directory = '../Results/Random_UTR_CNN.Hyperparam.Opt/'
+
+model = keras.models.model_from_json(open(path_to_model_params_directory + 'model_arch.json').read())
+model.load_weights(path_to_model_params_directory + 'model_weights.hdf5')
+model.compile(loss = 'mean_squared_error', optimizer = 'adam')
+```
 
 
 ## Jupyter notebooks:
@@ -18,12 +28,8 @@ To get going, just put the Data and Jupyter_notebooks folders into the same fold
 [Notebook 4 - Model-directed evolutions of highly-expressing 5' UTRs from 100 native and 100 random 5' UTR sequences](./Jupyter_notebooks/Notebook_4_Generating_Model_Directed_Evolution_of_UTRs_From_100_Native_and_Random_UTRs.ipynb)
 
 
-
-
 ## Requirements:
 We performed the model training on either a server with dedicated GPUs here at UW, or one of the machine learning/neural network instances on Amazon Web Services. I would recommend going this route, as using a laptop/desktop CPU may make you want to bang your head against the desk. A normal laptop should be fine for most of the other analysis.
-
-
 
 
 ## Versions of Python packages used:
