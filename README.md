@@ -20,11 +20,11 @@ model.compile(loss = 'mean_squared_error', optimizer = 'adam')
 
 
 ## Jupyter notebooks:
-[Notebook 1 - training a CNN on random 5\'92 UTR data along with hyper-parameter search](./Jupyter_notebooks/Notebook_1_CNN_Model_Training_with_Hyperparameter_Search.ipynb)
+[Notebook 1 - training a CNN on random 5' UTR data along with hyper-parameter search](./Jupyter_notebooks/Notebook_1_CNN_Model_Training_with_Hyperparameter_Search.ipynb)
 
-[Notebook 2 - CNN predictions of random 5\'92 UTR growth rates](./Jupyter_notebooks/Notebook_2_CNN_Predictions_of_Random_UTR_HIS3_data.ipynb)
+[Notebook 2 - CNN predictions of random 5' UTR growth rates](./Jupyter_notebooks/Notebook_2_CNN_Predictions_of_Random_UTR_HIS3_data.ipynb)
 
-[Notebook 3 - CNN predictions of native 5\'92 UTR growth rates](./Jupyter_notebooks/Notebook_3_CNN_Predictions_of_Native_UTR_HIS3_data.ipynb)
+[Notebook 3 - CNN predictions of native 5' UTR growth rates](./Jupyter_notebooks/Notebook_3_CNN_Predictions_of_Native_UTR_HIS3_data.ipynb)
 
 [Notebook 4 - Model-directed evolutions of highly-expressing 5' UTRs from 100 native and 100 random 5' UTR sequences](./Jupyter_notebooks/Notebook_4_Generating_Model_Directed_Evolution_of_UTRs_From_100_Native_and_Random_UTRs.ipynb)
 
