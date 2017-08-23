@@ -6,10 +6,11 @@ We hope that by including some of the code in our analysis it will help others r
 To get going, just put the Data and Jupyter_notebooks folders into the same folder. If you start with Notebook_1 everything should just work (including the creation of subsequent folders/subfolders). If you'd like to just go through a specific notebook without running the others, let me know and I can provide the required files (bgroves "at" uw "dot" edu, or benjaminbgroves "at" gmail "dot" com).
 
 
-If you want to use the exact model that we trained using the ~500,000 random 5' UTR sequences, the .hdf5 and .json files in the /Results/Random_UTR_CNN.Hyperparam.Opt/ folder will get you there.
+If you want to use the exact model that we trained using the ~500,000 random 5' UTR sequences, extract the Random_UTR_CNN_Hyperparams.tar.gz file in the /Results/ folder. This will give you the /Random_UTR_CNN.Hyperparam.Opt/ folder, inside of which are .hdf5 and .json files, these should get you there.
 
 e.g.
 ```Python
+# after you extract the folder, put it in /Results/ and call the .json and .hdf5 with keras.
 path_to_model_params_directory = '../Results/Random_UTR_CNN.Hyperparam.Opt/'
 
 model = keras.models.model_from_json(open(path_to_model_params_directory + 'model_arch.json').read())
